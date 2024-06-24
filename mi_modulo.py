@@ -39,13 +39,7 @@ class mi_clase:
 
     resumen = {}
 
-    def super__init__(self,y,x):
-        """Probando"""
-      """ Recibe los datos pretatados: y es un vector (variable respuesta o endógena), x es vector o matriz (variable(s) predictora(s) o exógena(s).)"""
-      self.datos_x = x
-      self.datos_y = y
-      self.X = sm.add_constant(self.datos_x) # Crea la matriz para los modelos de regresión.
-
+    
 
     def estimar_modelo_lineal(self):
       """ Calcular los coeficientes de la regresión lineal (tanto sea simple como múltiple)
